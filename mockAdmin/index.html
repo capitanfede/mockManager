@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+
+  <title>MockME </title>
+
+  <link rel="shortcut icon" href="resources/favicon.ico">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css?version=1.0" media="screen" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<script src="js/index.js?version=1.0"></script>
+	
+  <div class="wrap">
+		<br><br>
+		<label id="errorLabel" class="label-error hidden" ></label>
+		<div class="avatar">
+		</div>
+		<input id="username-input" type="top" placeholder="username" required>
+		<div class="bar">
+			<i></i>
+		</div>
+		<input id="pwd-input" type="password" placeholder="password" required>
+		<div class="bar">
+		</div>
+		<select class="select-css" id="channel-input" onchange="selectChannel()">
+			<option disabled selected>channel</option>
+			<option>BANVIR</option>
+			<option>CORVIR</option>
+			<option>MOBILE</option>
+		</select>
+		<select class="select-css" id="jvm-input">
+			<option disabled selected>jvm</option>
+		</select>
+		<select class="select-css bottom" id="machine-input">
+			<option disabled selected>machine</option>
+		</select>
+		<br>
+		<button onclick="checkMock()">CheckIT!</button>
+		<br><br>
+		<button onclick="mettiMock()">MockIT!</button>
+		<br><br>
+		<button onclick="togliMock()">UnMockIT!</button>
+		<br><br>
+		<div class="backgroundLoader hidden" id="background-loader">
+		</div>
+		<img class="loaderImg hidden" id="img-loader" src="resources/pageloader.gif" />
+	</div>
+	<div class="wrap-console">
+		
+		<button onclick="clearConsole()"><i class="fa fa-eraser" aria-hidden="true"></i></button>
+		<textarea type="text" id="consoleTextarea" class="console md-textarea md-textarea-scroll" readonly="readonly"></textarea>
+	</div>
+
+</body>
+
+</html>

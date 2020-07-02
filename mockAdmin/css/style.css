@@ -1,0 +1,236 @@
+@font-face 
+{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+body 
+{
+	background: #00421b ;
+	font-family: "Lato" ;
+}
+.hidden
+{
+	visibility:hidden;
+ }
+.wrap 
+{
+	width:250px;
+	height: auto;
+	margin: auto;
+}
+.avatar 
+{
+	width: 100%;
+	margin: auto;
+	width: 0px;
+	border-radius: 100px;
+	height: 40px;
+	background: #448ed3 ;
+	position: relative;
+	bottom: -15px;
+}
+.avatar img 
+{
+	width: 55px;
+	height: 55px;
+	border-radius: 100px;
+	margin: auto;
+	border:3px solid #fff;
+	display: block;
+}
+.wrap input 
+{
+	border: none;
+	background: #fff;
+    font-family:Lato ;
+    font-weight:700 ;
+	display: block;
+	height: 40px;
+	outline: none;
+	width: calc(100% - 24px) ;
+	margin: auto;
+	padding: 6px 12px 6px 12px;
+}
+.bar 
+{
+	width: 100%;
+	height: 1px;
+	background: #fff ;
+}
+.bar i 
+{
+	width: 95%;
+	margin: auto;
+	height: 1px ;
+	display: block;
+	background: #d1d1d1;
+}
+.wrap input[type="top"] 
+{
+	border-radius: 7px 7px 0px 0px ;
+}
+.wrap input[type="down"] 
+{
+	border-radius: 0px 0px 7px 7px ;
+}
+.wrap input[type="value"] 
+{
+	border-radius: 0px 0px 0px 0px ;
+}
+.forgot_link 
+{
+	color: #83afdf ;
+	color: #83afdf;
+	text-decoration: none;
+	font-size: 11px;
+	position: relative;
+	left: 193px;
+	top: -36px;
+}
+.wrap button 
+{
+	width: 100%;
+	border-radius: 7px;
+	background: #FFFE09;
+	text-decoration: center;
+	border: none;
+	color: #00421b;
+    margin-top:-5px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	outline: none;
+	font-size: 18px;	
+	cursor: pointer;
+}
+
+.wrap-console 
+{
+	width:800px;
+	height: auto;
+	min-height: 200px;
+	margin: auto;
+	margin-top: 1%;
+	margin-bottom: 5%;
+}
+.wrap-console textarea 
+{
+	border: none;
+	background: #fff;
+    font-family:Lato ;
+    font-weight:700 ;
+	display: block;
+	height: 100%;
+	outline: none;
+	width: calc(100% - 24px) ;
+	margin: auto;
+	padding: 6px 12px 6px 12px;
+}
+.wrap-console .console 
+{
+	height: 300px;
+	padding: 10px;
+}
+
+.wrap-console button 
+{
+	height: 2px;
+	margin-bottom: 15px;
+	margin-right: 15px;
+	float: right;
+	border-radius: 50px;
+	background: #FFFE09;
+	border: none;
+	color: #00421b;
+	padding-top: 6px;
+	padding-bottom: 25px;
+	outline: none;
+	font-size: 18px;	
+	cursor: pointer;
+}
+textarea.md-textarea-scroll
+{
+  overflow-y: visible;
+}
+textarea.md-textarea 
+{
+  border-radius: 7px 7px 7px 7px ;
+  font-family: Courier New;
+  padding: 0;
+  resize: none;
+  min-height: 3rem;
+}
+.wrap label.label-error 
+{
+	color: rgb(255, 9, 9);
+	font-family:Lato ;
+    font-weight:700 ;
+}
+
+.select-css {
+    display: block;
+    font-family: lato;
+	font-weight:700 ;
+	height: 40px;
+    color: #444;
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em;
+    width: 100%;
+    max-width: 100%; 
+    box-sizing: border-box;
+    margin: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+	background-size: .65em auto, 100%;
+}
+.select-css::-ms-expand {
+    display: none;
+}
+.select-css:hover {
+    border-color: #888;
+}
+.select-css:focus {
+    border-color: #aaa;
+    color: #222; 
+    outline: none;
+}
+.select-css option {
+	font-weight:normal;
+	font-family: lato;
+	font-weight: 700;
+}
+.bottom {
+	border-radius: 0px 0px 7px 7px ;
+}
+
+.loaderImg {
+	width: 80px;
+	height: 80px;
+	position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+	margin:auto;
+	opacity: 1;
+}
+
+.backgroundLoader {
+	width: 100%;
+	height: 100%;
+	position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+	margin:auto;
+	background: #aaa;
+	opacity: 0.5;
+}
